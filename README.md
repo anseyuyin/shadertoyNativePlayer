@@ -24,16 +24,19 @@
 ``` 
 //例如 sample
 http://localhost:5500/?ProteanClouds
+[https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds](https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds)
 ```
 
 
 
 ### 测试作品
-[![seascape](./doc/cap01.png)](https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds)
-![happyJumping](./doc/cap02.png)
-![PlanetShadertoy](./doc/cap03.png)
-![ProteanClouds](./doc/cap04.png)
-![raymarchingPrimitives](./doc/cap05.png)
+点击图片可跳转到样例
+
+[![seascape](./doc/cap01.png)](https://anseyuyin.github.io/shadertoyNativePlayer/?seascape)
+[![happyJumping](./doc/cap02.png)](https://anseyuyin.github.io/shadertoyNativePlayer/?happyJumping)
+[![PlanetShadertoy](./doc/cap03.png)](https://anseyuyin.github.io/shadertoyNativePlayer/?PlanetShadertoy)
+[![ProteanClouds](./doc/cap04.png)](https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds)
+[![raymarchingPrimitives](./doc/cap05.png)](https://anseyuyin.github.io/shadertoyNativePlayer/?raymarchingPrimitives)
 
 ### 特性
 * 资源配置化shadertoy作品
