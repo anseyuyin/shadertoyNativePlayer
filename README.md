@@ -8,7 +8,7 @@
 > 2. 新建目录文件夹 ./res/sToy/xxx/。 
 > 3. 通道代码文件获取 ，比如 Image 通道, 新建文件 ./res/sToy/xxx/Image.glsl ,将同名标签中代码拷贝至该文件。 
 > 3. 新建配置 ./res/sToy/xxx/stoyconfig.json 并设置。
-``` json
+``` 
 //stoyconfig.json 配置例子
 {
     //文件列表
