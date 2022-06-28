@@ -21,11 +21,12 @@
 * 播放指定资源
 > 1. 启动一个 web服务,让 index.html 可以运行。
 > 2. URL + ? + 资源名,的形式来指定资源。
+
+例如 sample
 ``` 
-//例如 sample
 http://localhost:5500/?ProteanClouds
-[https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds](https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds)
 ```
+[https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds](https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds)
 
 
 
