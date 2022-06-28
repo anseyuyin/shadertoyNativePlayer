@@ -1,6 +1,6 @@
 # shadertoy Native Player
 ### 说明
-一个html程序,可本地播放 [shadertoy](https://www.shadertoy.com/) 网站品台上的作品。
+一个html程序,可本地播放 [shadertoy](https://www.shadertoy.com/) 网站平台的作品。
 
 ### 使用
 * 将shadertoy的作品制作成播放资源
