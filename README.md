@@ -29,7 +29,7 @@ http://localhost:5500/?ProteanClouds
 
 
 ### 测试作品
-![seascape](./doc/cap01.png)
+[![seascape](./doc/cap01.png)](https://anseyuyin.github.io/shadertoyNativePlayer/?ProteanClouds)
 ![happyJumping](./doc/cap02.png)
 ![PlanetShadertoy](./doc/cap03.png)
 ![ProteanClouds](./doc/cap04.png)
