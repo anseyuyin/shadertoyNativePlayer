@@ -1,0 +1,16 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "System",
+    "target": "es5",
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "outFile": "../lib/stnplayer.js",
+    "lib": [
+        "dom",
+        "es2015.promise",
+        "es5"
+    ]
+  }
+}

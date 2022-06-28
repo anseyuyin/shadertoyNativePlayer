@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>shadertoy Native Player</title>
+</head>
+
+<body style="height:100%;margin:0;padding:0; overflow: hidden; background-color: black;">
+    <canvas id="webglCanvas" tabindex="0" style="position:absolute;height:100%;width:100%;">
+        plass use a browser that supports "canvas"
+    </canvas>
+</body>
+
+<script src="./lib/stnplayer.js"></script>
+<script>
+    window.onload = () => {
+        console.log(`start!`);
+        //which one is to play ?
+        let stoyName = `test`;
+        //can use url parameter to select res , like "http://192.168.50.134:5500/?happyJumping"
+        if (location.search[0] == "?") {
+            stoyName = location.search.substring(1);
+        }
+        console.log(`res : ${stoyName}`);
+
+        let canvas = document.getElementById("webglCanvas");
+        //get webglContext
+        let webgl2 = canvas.getContext("webgl2", { alpha: false, depth: false, antialias: false, powerPreference: "high-performance", premultipliedAlpha: false, preserveDrawingBuffer: true });
+        //shadertoy Native Player init.
+        let stnPlayer = new STNativePlayer.STNPlayer(webgl2);
+        //new load tool object
+        let stLoader = new STNativePlayer.Loader();
+        let stoyResPath = `./res/sToy/${stoyName}/`;
+        //to load stoy config
+        stLoader.loadSToy(stoyResPath).then((stoyD) => {
+            //load end ,run to renderer
+            stnPlayer.run(stoyD);
+        });
+        //refresh Canvas Size on window resize
+        window.onresize = () => {
+            stnPlayer.refreshCanvasSize();
+        }
+    }
+
+</script>
+
+</html>
