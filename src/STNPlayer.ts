@@ -102,16 +102,16 @@ namespace STNativePlayer {
             };
 
             //生成buffer,上传数据到GPU
-            let quadMesh = {
+            let fullMesh = {
                 glPosBuffer: this.setGLData(new Float32Array(quadMeshData.poss)),
             }
 
             //attrib 更新
             //pos 
-            let aPositionAddr = gl.getAttribLocation(program, "a_Position");
-            gl.bindBuffer(gl.ARRAY_BUFFER, quadMesh.glPosBuffer);
+            let aPositionAddr = gl.getAttribLocation(program, "a_Position");    //先获取 Attrib 的 名为 "a_Position" 字段的地址
+            gl.bindBuffer(gl.ARRAY_BUFFER, fullMesh.glPosBuffer);   //指定当前被操作的 缓冲区对象
             //告诉显卡从当前绑定的缓冲区（bindBuffer()指定的缓冲区）中读取顶点数据 (怎么去读取数据)
-            gl.vertexAttribPointer(aPositionAddr, 2, gl.FLOAT, false, 0, 0);  //数据不够时会填充默认值
+            gl.vertexAttribPointer(aPositionAddr, 2, gl.FLOAT, false, 0, 0);  //告诉GPU，"a_Position" 字段，如何从缓冲区中读取数据
             //激活启用
             gl.enableVertexAttribArray(aPositionAddr);
 
